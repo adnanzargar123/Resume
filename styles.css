@@ -1,0 +1,63 @@
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.card {
+  /* Main section card style */
+  @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+.tag {
+  /* Skills tags */
+  @apply bg-sky-100 text-sky-700 px-4 py-1 rounded-md text-sm font-medium;
+}
+
+.icon-link {
+  @apply flex items-center text-gray-600 hover:text-sky-600 transition-colors duration-300;
+}
+
+.icon-link i {
+  @apply mr-2 text-sky-500;
+}
+
+/* Project Card Sub-element Styles */
+.project-icon-base {
+  font-size: 2.3rem;
+  /* Approx 48px */
+  @apply text-sky-400 mb-4;
+}
+
+.project-title {
+  @apply text-xl font-semibold text-white mb-2;
+}
+
+.project-description {
+  @apply text-sm text-gray-300 mb-4 flex-grow;
+  /* flex-grow allows description to take available space */
+}
+
+.project-tech-tags-container {
+  @apply mb-5 flex flex-wrap justify-center gap-2;
+}
+
+.project-tech-tag {
+  @apply text-xs bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded-full;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
